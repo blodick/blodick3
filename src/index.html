@@ -127,7 +127,7 @@
                 
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
-                    <div class="title_fz36 about_subtitle">Меня зовут Владислав</div>
+                    <div class="title title_fz36 about_subtitle">Меня зовут Владислав</div>
                     <div class="divider"></div>
                     <p class="about__text">Я начинающий верстальщик. <br>
                         Прошёл курсы по WEB-разработкам. <br>
@@ -156,7 +156,7 @@
     <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
-            <div class="title tilte_fz36 title__section-subtitle">Чем я буду полезен</div>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
                 <div class="resume__column">
@@ -199,7 +199,7 @@
     <section class="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Навыки</h2>
-            <div class="title tilte_fz36 title__section-subtitle">Что я использую в работе</div>
+            <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
             <div class="divider"></div>
             <div class="skills__items">
                 <div class="skills__item">
@@ -282,23 +282,36 @@
     <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
-            <div class="title tilte_fz36 title__section-subtitle">Мои работы</div>
+            <div class="title title_fz36 title__section-subtitle">Мои работы</div>
             <div class="divider"></div>
 
             <div class="portfolio__wrapper">
                 <a href="http://uber.blodick-domain.ru/uber/src/" class="portfolio__item horizonal__1">
-                    <img src="img/works/uber.jpg" alt="uber">
+                    <picture>
+                        <source media="(max-width:1199px" srcset="img/works/uber-min.jpg">
+                        <source media="(min-width:1200px" srcset="img/works/uber.jpg">
+                        <img src="img/works/uber.jpg" alt="uber">
+                    </picture>
                 </a>
 
                 <a href="http://blodick-domain.ru/" class="portfolio__item horizonal" >
-                <img src="img/works/pulse.png" alt="uber">
+                    <picture>
+                        <source media="(max-width:1199px" srcset="img/works/pulse-min.jpg">
+                        <source media="(min-width:1200px" srcset="img/works/pulse.png">
+                        <img src="img/works/pulse.png" alt="pulse">
+                    </picture>
                 </a>
 
                 <a href="http://uber.blodick-domain.ru/wordpress/src/" class="portfolio__item vertical ">
-                <img src="img/works/mainbg.png" alt="uber">
+                    <picture>
+                        <source media="(max-width:1199px" srcset="img/works/mainbg-min.png">
+                        <source media="(min-width:1200px" srcset="img/works/mainbg.png">
+                        <img src="img/works/mainbg.png" alt="wordpress">
+                    </picture>
                 </a>
             </div>
         </div>
+
     </section>
     <section class="contacts">
         <div class="container">
